@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lifestyle Store</title>
+	<title>Login Page | Lifestyle Store</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,15 +27,30 @@
 			</div>
 		</div>
 	</nav>
-	<div id="banner-image">
-		<div class="container">
-			<center>
-				<div id="banner-content">
-					<h1>We sell lifestyle.</h1>
-					<p>Flat 40% OFF on premium brands</p>
-					<a href="products.html" class="btn btn-danger btn-lg active">Shop Now</a>
+	<div class="container">
+		<div class="row row-form">
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>LOGIN</h4>
+					</div>
+					<div class="panel-body">
+						<p class="text-warning cols">Login to make a purchase</p>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" name="Email" placeholder="Email" required>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" name="Password" placeholder="Password" required>
+							</div>
+						</form>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+					<div class="panel-footer">
+						<p>Don't have an account? <a href="signup.html">Register</a></p>
+					</div>
 				</div>
-			</center>
+			</div>
 		</div>
 	</div>
 	<footer>
