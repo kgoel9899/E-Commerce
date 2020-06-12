@@ -21,20 +21,20 @@ body {
 	background-color: rgba(0, 0, 0, 0.7);
 	max-width: 660px;
 }
-.buttonp {
-	padding-bottom: 20px;
-}
-.row-form {
+.top {
 	padding-top: 100px;
 }
 .cols {
 	color: black;
 }
-footer{
+footer {
 	position: absolute;
     padding: 10px 0;   
     background-color: #101010;   
     color:#9d9d9d;
     bottom: 0; 
     width: 100%;
+}
+.footer-bot {
+    position: relative;
 }
