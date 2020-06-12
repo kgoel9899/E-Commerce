@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cart | Lifestyle Store</title>
+	<title>Settings | Lifestyle Store</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -31,22 +31,21 @@
 	<div class="container top">
 		<div class="row">
 			<div class="col-xs-6 col-xs-offset-3">
-				<table class="table table-default">
-					<tbody>
-						<tr>
-							<th>Item Number</th>
-							<th>Item Name</th>
-							<th>Price</th>
-							<th></th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>Total</td>
-							<td>₹ 0</td>
-							<td><a href="success.html" class="btn btn-primary">Confirm Order</a></td>
-						</tr>
-					</tbody>
-				</table>
+				<form>
+					<div class="form-group">
+						<h1>Change Password</h1>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="old password" placeholder="Old Password" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="new password" placeholder="New Password" required>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="nnew password" placeholder="Re-type New Password" required>
+					</div>
+					<button type="submit" class="btn btn-primary">Change</button>
+				</form>
 			</div>
 		</div>
 	</div>

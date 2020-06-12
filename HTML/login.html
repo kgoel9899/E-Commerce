@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Settings | Lifestyle Store</title>
+	<title>Login | Lifestyle Store</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -21,9 +21,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNav">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-					<li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings</a></li>
-					<li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
+					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -31,21 +30,26 @@
 	<div class="container top">
 		<div class="row">
 			<div class="col-xs-6 col-xs-offset-3">
-				<form>
-					<div class="form-group">
-						<h1>Change Password</h1>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>LOGIN</h4>
 					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="old password" placeholder="Old Password" required>
+					<div class="panel-body">
+						<p class="text-warning cols">Login to make a purchase</p>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" name="Email" placeholder="Email" required>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" name="Password" placeholder="Password" required>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
 					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="new password" placeholder="New Password" required>
+					<div class="panel-footer">
+						<p>Don't have an account? <a href="signup.html">Register</a></p>
 					</div>
-					<div class="form-group">
-						<input type="password" class="form-control" name="nnew password" placeholder="Re-type New Password" required>
-					</div>
-					<button type="submit" class="btn btn-primary">Change</button>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
