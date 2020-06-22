@@ -5,28 +5,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="../index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="index.html" class="navbar-brand">Lifestyle Store</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNav">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<?php 
+		include "../includes/header.php";
+	?>
 	<div class="container top">
 		<div class="row">
 			<div class="col-xs-6 col-xs-offset-3">
@@ -47,18 +32,14 @@
 						</form>
 					</div>
 					<div class="panel-footer">
-						<p>Don't have an account? <a href="signup.html">Register</a></p>
+						<p>Don't have an account? <a href="signup.php">Register</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer>
-		<div class="container">
-			<center>
-				Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000
-			</center>
-		</div>
-	</footer>
+	<?php 
+		include "../includes/Footer.php";
+	?>
 </body>
 </html>

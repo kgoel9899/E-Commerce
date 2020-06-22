@@ -5,29 +5,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="../index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="index.html" class="navbar-brand">Lifestyle Store</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNav">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-					<li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings</a></li>
-					<li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<?php 
+		include "../includes/header.php";
+	?>
 	<div class="container top">
 		<div class="jumbotron">
 			<h1>Welcome to our Lifestyle Store!</h1>
@@ -36,7 +20,7 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/5.jpg" class="img-responsive">
+					<img src="../img/5.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Canon EOS</h3>
@@ -48,7 +32,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/2.jpg" class="img-responsive">
+					<img src="../img/2.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Sony DSLR</h3>
@@ -60,7 +44,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/3.jpg" class="img-responsive">
+					<img src="../img/3.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Sony DSLR</h3>
@@ -72,7 +56,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/4.jpg" class="img-responsive">
+					<img src="../img/4.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Olympus DSLR</h3>
@@ -86,7 +70,7 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/9.jpg" class="img-responsive">
+					<img src="../img/9.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Titan Model #301</h3>
@@ -98,7 +82,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/10.jpg" class="img-responsive">
+					<img src="../img/10.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Titan Model #201</h3>
@@ -110,7 +94,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/11.jpg" class="img-responsive">
+					<img src="../img/11.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>HMT Milan</h3>
@@ -122,7 +106,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/12.jpg" class="img-responsive">
+					<img src="../img/12.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Faber Luba #111</h3>
@@ -136,7 +120,7 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/8.jpg" class="img-responsive">
+					<img src="../img/8.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>H&W</h3>
@@ -148,7 +132,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/6.jpg" class="img-responsive">
+					<img src="../img/6.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Luis Phil</h3>
@@ -160,7 +144,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/13.jpg" class="img-responsive">
+					<img src="../img/13.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>John Zok</h3>
@@ -172,7 +156,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="img/14.jpg" class="img-responsive">
+					<img src="../img/14.jpg" class="img-responsive">
 					<center>
 						<div class="caption">
 							<h3>Jhalsani</h3>
@@ -184,12 +168,8 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer-bot">
-		<div class="container">
-			<center>
-				Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000
-			</center>
-		</div>
-	</footer>
+	<?php 
+		include "../includes/Footer-Bot.php";
+	?>
 </body>
 </html>
