@@ -1,3 +1,10 @@
+<?php
+	require "../includes/common.php";
+	if(!isset($_SESSION['email'])) {
+		header('location: index.php');
+	}
+	//do here
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +18,6 @@
 <body>
 	<?php 
 		include "../includes/header.php";
-		if(!isset($_SESSION['email'])) {
-			header('location: index.php');
-		}
-		//do here
 	?>
 	<div class="container top">
 		<center>
