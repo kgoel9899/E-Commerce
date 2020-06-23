@@ -1,9 +1,3 @@
-<?php 
-	require "../includes/common.php";
-	if(isset($_SESSION['email'])) {
-		header('location: products.php');
-	}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +11,9 @@
 <body>
 	<?php 
 		include "../includes/header.php";
+		if(isset($_SESSION['email'])) {
+			header('location: products.php');
+		}
 	?>
 	<div id="banner-image">
 		<div class="container">

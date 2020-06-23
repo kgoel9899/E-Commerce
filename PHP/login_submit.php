@@ -8,11 +8,12 @@
 	$check_query = "SELECT id, email FROM USERS where email='" . $email . "'AND password='" . $pwd . "'";
 	$check_result = mysqli_query($con, $check_query) or die (mysqli_error($con));
 	if(mysqli_num_rows($check_result) == 0) {
-		header('location: login_fail.php');
+		echo "<script>alert('Email and/or password incorrect. Try Again!');</script>";
+		echo "<script>setTimeout(\"location.href = 'signup.php';\", 1);</script>";
 	} else {
 		$row = mysqli_fetch_array($check_result);
 		$_SESSION['email'] = $row['email'];
 		$_SESSION['user_id'] = $row['id'];
-		header('location: products.php');
+		header("location: products.php");
 	}
 ?>
