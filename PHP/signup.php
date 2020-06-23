@@ -1,3 +1,9 @@
+<?php
+	require "../includes/common.php";
+	if(isset($_SESSION['email'])) {
+		header('location: products.php');
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +21,7 @@
 	<div class="container top">
 		<div class="row">
 			<div class="col-xs-6 col-xs-offset-3">
-				<form>
+				<form method="post" action="signup_script.php">
 					<div class="form-group">
 						<h1>SIGN UP</h1>
 					</div>

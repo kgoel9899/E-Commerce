@@ -1,3 +1,9 @@
+<?php 
+	require "../includes/common.php";
+	if(!isset($_SESSION['email'])) {
+		header('location: index.php');
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,18 +21,18 @@
 	<div class="container top">
 		<div class="row">
 			<div class="col-xs-6 col-xs-offset-3">
-				<form>
+				<form method="post" action="settings_script.php">
 					<div class="form-group">
 						<h1>Change Password</h1>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" name="old password" placeholder="Old Password" required>
+						<input type="text" class="form-control" name="old_password" placeholder="Old Password" required>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" name="new password" placeholder="New Password" required>
+						<input type="text" class="form-control" name="new_password" placeholder="New Password" required>
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" name="nnew password" placeholder="Re-type New Password" required>
+						<input type="password" class="form-control" name="nnew_password" placeholder="Re-type New Password" required>
 					</div>
 					<button type="submit" class="btn btn-primary">Change</button>
 				</form>
