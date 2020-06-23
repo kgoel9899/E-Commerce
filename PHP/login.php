@@ -1,3 +1,6 @@
+<?php 
+	require "../includes/common.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +24,7 @@
 					</div>
 					<div class="panel-body">
 						<p class="text-warning cols">Login to make a purchase</p>
-						<form>
+						<form method="post" action="login_submit.php">
 							<div class="form-group">
 								<input type="text" class="form-control" name="Email" placeholder="Email" required>
 							</div>
