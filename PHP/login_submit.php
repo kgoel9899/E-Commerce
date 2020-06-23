@@ -9,7 +9,7 @@
 	$check_result = mysqli_query($con, $check_query) or die (mysqli_error($con));
 	if(mysqli_num_rows($check_result) == 0) {
 		echo "<script>alert('Email and/or password incorrect. Try Again!');</script>";
-		echo "<script>setTimeout(\"location.href = 'signup.php';\", 1);</script>";
+		echo "<script>setTimeout(\"location.href = 'login.php';\", 1);</script>";
 	} else {
 		$row = mysqli_fetch_array($check_result);
 		$_SESSION['email'] = $row['email'];
