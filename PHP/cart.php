@@ -23,18 +23,46 @@
 			<div class="col-xs-6 col-xs-offset-3">
 				<table class="table table-default">
 					<tbody>
-						<tr>
-							<th>Item Number</th>
-							<th>Item Name</th>
-							<th>Price</th>
-							<th></th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>Total</td>
-							<td>₹ 0</td>
-							<td><a href="success.php" class="btn btn-primary">Confirm Order</a></td>
-						</tr>
+						<?php 
+							$user_id = $_SESSION['user_id'];
+							$sel_query = "SELECT items.id, items.name, items.price FROM users_items 
+										INNER JOIN items ON users_items.item_id = items.id
+										WHERE users_items.user_id='$user_id' AND status = 'Added to cart'";
+							$sel_query_result = mysqli_query($con, $sel_query) or die(mysqli_error($con));
+							if(mysqli_num_rows($sel_query_result) == 0) {
+								echo "<center><h2>Cart is empty! Add items to the cart first!</h2></center>";
+							} else { 
+						?>
+								<tr>
+									<th>Item Number</th>
+									<th>Item Name</th>
+									<th>Price</th>
+									<th></th>
+								</tr>
+								<?php 
+									$sum = 0;
+									$id = "";
+									while($row = mysqli_fetch_array($sel_query_result)) {
+										$sum += $row["price"];
+										$id .= $row["id"] . ", "; 
+								?>
+										<tr>
+											<td><?php echo "#" . $row["id"]; ?></td>
+											<td><?php echo $row["name"]; ?></td>
+											<td><?php echo "₹ " . $row["price"]; ?></td>
+											<td><a href="cart-remove.php?id={$row['id']}" class="remove_item_link"> Remove</a></td>
+										</tr>
+								<?php 
+									}
+								?>
+									<tr>
+										<td></td>
+										<td><?php echo "Total"; ?></td>
+										<td><?php echo "₹ " . $sum; ?></td>
+										<td><a href="success.php?itemsid='.$id .'"class="btn btn-primary">Confirm Order</a></td>
+									</tr>
+									<?php echo substr($id, 0, -1); ?>
+							<?php } ?>
 					</tbody>
 				</table>
 			</div>
