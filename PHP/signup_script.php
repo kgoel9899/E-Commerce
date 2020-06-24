@@ -20,7 +20,7 @@
 		echo "<script>setTimeout(\"location.href = 'signup.php';\", 1);</script>";
 	} else {
 		$ins_query = "INSERT INTO USERS (name, email, password, contact, city, address) 
-						VALUES ('$name', '$email', '$pwd', '$contact', $city, '$address')";
+						VALUES ('$name', '$email', '$pwd', '$contact', '$city', '$address')";
 		mysqli_query($con, $ins_query) or die (mysqli_error($con));
 		$user_id = mysqli_insert_id($con);
 		$_SESSION['email'] = $email;

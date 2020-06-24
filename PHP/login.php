@@ -26,7 +26,7 @@
 						<p class="text-warning cols">Login to make a purchase</p>
 						<form method="post" action="login_submit.php">
 							<div class="form-group">
-								<input type="text" class="form-control" name="Email" placeholder="Email" required>
+								<input type="email" class="form-control" name="Email" placeholder="Email" required>
 							</div>
 							<div class="form-group">
 								<input type="password" class="form-control" name="Password" placeholder="Password" required>
