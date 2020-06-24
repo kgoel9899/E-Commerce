@@ -26,7 +26,7 @@
 						<h1>SIGN UP</h1>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" name="name" placeholder="Name" pattern="[A-Za-z]{3,100}" required>
+						<input type="text" class="form-control" name="name" placeholder="Name" minlength="3" pattern="[A-Za-z\s]+" required>
 					</div>
 					<div class="form-group">
 						<input type="text" class="form-control" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
@@ -35,7 +35,7 @@
 						<input type="password" class="form-control" name="password" placeholder="Password" pattern=".{8,}" required>
 					</div>
 					<div class="form-group">
-						<input type="tel" class="form-control" name="contact" placeholder="Contact" pattern="[789][0-9]{9}" required>
+						<input type="text" class="form-control" name="contact" placeholder="Contact" pattern="[789][0-9]{9}" required>
 					</div>
 					<div class="form-group">
 						<input type="text" class="form-control" name="city" placeholder="City" required>
