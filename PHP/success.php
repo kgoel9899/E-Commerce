@@ -3,7 +3,6 @@
 	if(!isset($_SESSION['email'])) {
 		header('location: index.php');
 	}
-	//do here
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,6 +21,13 @@
 	<div class="container top">
 		<center>
 			<h4 class="cols">
+				<?php
+					$itemsid = $_GET["itemsid"];
+					$user_id = $_SESSION["user_id"];
+					echo $itemsid;
+					$upd_query = "UPDATE users_items SET status = 'Confirmed' WHERE user_id = '$user_id' AND item_id IN ('$itemsid')";
+					mysqli_query($con, $upd_query) or die(mysqli_error($con));
+				?>
 				Your order is confirmed. Thank you for shopping with us. 
 				<a href="products.php">Click here</a> to purchase any other item.
 			</h4>

@@ -60,7 +60,7 @@
 										<td></td>
 										<td><?php echo "Total"; ?></td>
 										<td><?php echo "₹ " . $sum; ?></td>
-										<td><a href="success.php?id=<?php echo $id; ?>" class="btn btn-primary">Confirm Order</a></td>
+										<td><a href="success.php?itemsid=<?php echo $id; ?>" class="btn btn-primary">Confirm Order</a></td>
 									</tr>
 							<?php } ?>
 					</tbody>
