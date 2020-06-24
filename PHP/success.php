@@ -24,7 +24,8 @@
 				<?php
 					$itemsid = $_GET["itemsid"];
 					$user_id = $_SESSION["user_id"];
-					echo $itemsid;
+					$itemsid = array_map("intval", explode(",", $itemsid));
+					$itemsid = implode("','", $itemsid);
 					$upd_query = "UPDATE users_items SET status = 'Confirmed' WHERE user_id = '$user_id' AND item_id IN ('$itemsid')";
 					mysqli_query($con, $upd_query) or die(mysqli_error($con));
 				?>
