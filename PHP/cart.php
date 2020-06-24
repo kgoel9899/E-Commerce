@@ -44,24 +44,24 @@
 									$id = "";
 									while($row = mysqli_fetch_array($sel_query_result)) {
 										$sum += $row["price"];
-										$id .= $row["id"] . ", "; 
+										$id .= $row["id"] . ","; 
 								?>
 										<tr>
 											<td><?php echo "#" . $row["id"]; ?></td>
 											<td><?php echo $row["name"]; ?></td>
 											<td><?php echo "₹ " . $row["price"]; ?></td>
-											<td><a href="cart-remove.php?id={$row['id']}" class="remove_item_link"> Remove</a></td>
+											<td><a href="cart-remove.php?id=<?php echo $row['id']; ?>" class="remove_item_link"> Remove</a></td>
 										</tr>
 								<?php 
 									}
+									$id = rtrim($id, ",");
 								?>
 									<tr>
 										<td></td>
 										<td><?php echo "Total"; ?></td>
 										<td><?php echo "₹ " . $sum; ?></td>
-										<td><a href="success.php?itemsid='.$id .'"class="btn btn-primary">Confirm Order</a></td>
+										<td><a href="success.php?id=<?php echo $id; ?>" class="btn btn-primary">Confirm Order</a></td>
 									</tr>
-									<?php echo substr($id, 0, -1); ?>
 							<?php } ?>
 					</tbody>
 				</table>
