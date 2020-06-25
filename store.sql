@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Jun 24, 2020 at 09:32 AM
+-- Generation Time: Jun 25, 2020 at 08:04 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -89,7 +89,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `contact`, `city`, `addr
 (10, 'werfd', 'aewrdfa@werfg.com', 'e13ab6ea9f21f372cc01cf786eec71bd', '9999999999', 'sdsadfv', '\'Nir\', 000'),
 (11, 'abc asdf', 'asdfffss@sdf.com', '1d8a536bddf90fd8f749fcbe2eb737f4', '9999999999', 'desfvgbh', 'wearfd\'eardfg\''),
 (12, 'Kshitij Goel', 'aedfgbghrew@wdfgg.com', 'dc02e1d306cac331fc764d2d306e55cc', '9999999999', 'NNNNN', 'Flat No'),
-(13, 'Kshitij G', 'abcd123@abc.com', 'f72a6016e00b6628b5f2bf05bf7b4e87', '9999999999', 'abcd', 'abcd\'');
+(13, 'Kshitij G', 'abcd123@abc.com', '5c249c942c4ed13a8a4cc1a2a08bc0df', '9999999999', 'abcd', 'abcd\'');
 
 -- --------------------------------------------------------
 
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `users_items` (
   PRIMARY KEY (`id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users_items`
@@ -127,7 +127,16 @@ INSERT INTO `users_items` (`id`, `user_id`, `item_id`, `status`) VALUES
 (32, 12, 2, 'Confirmed'),
 (33, 12, 3, 'Confirmed'),
 (34, 13, 2, 'Confirmed'),
-(36, 13, 7, 'Confirmed');
+(36, 13, 7, 'Confirmed'),
+(37, 13, 2, 'Confirmed'),
+(38, 13, 3, 'Confirmed'),
+(39, 13, 4, 'Confirmed'),
+(40, 13, 1, 'Confirmed'),
+(41, 13, 2, 'Confirmed'),
+(42, 13, 3, 'Confirmed'),
+(43, 13, 4, 'Confirmed'),
+(44, 13, 7, 'Confirmed'),
+(45, 13, 8, 'Confirmed');
 
 --
 -- Constraints for dumped tables
